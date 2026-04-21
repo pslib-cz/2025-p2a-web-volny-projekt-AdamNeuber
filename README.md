@@ -36,8 +36,8 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 | Výstup | Odkaz |
 |---|---|
 | GitHub Pages (live) | [`Doplň odkaz`](#) |
-| Grafický manuál (Figma / Canva) | [`https://www.figma.com/design/xSB5gzLRE7GdcZDx5HPrcj/SynapC?node-id=1-4`](#) |
-| Grafický návrh webu (Figma) | [`https://www.figma.com/design/xSB5gzLRE7GdcZDx5HPrcj/SynapC?node-id=1-4`](#) |
+| Grafický manuál (Figma / Canva) | [`https://www.figma.com/design/xSB5gzLRE7GdcZDx5HPrcj/SynapC?node-id=1-3`](https://www.figma.com/design/xSB5gzLRE7GdcZDx5HPrcj/SynapC?node-id=1-3) |
+| Grafický návrh webu (Figma) | [`https://www.figma.com/design/xSB5gzLRE7GdcZDx5HPrcj/SynapC?node-id=1-4`](https://www.figma.com/design/xSB5gzLRE7GdcZDx5HPrcj/SynapC?m=auto&t=gkBLR1uWQc5joCC0-6) |
 | Fotografie / média | [`Doplň odkaz`](#) |
 
 ---
