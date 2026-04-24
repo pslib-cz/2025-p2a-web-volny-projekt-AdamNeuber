@@ -1,36 +1,11 @@
-:root {
-  --bg-dark: oklch(0.1 0.065 286);
-  --bg: oklch(0.15 0.065 286);
-  --bg-light: oklch(0.2 0.065 286);
-  --text: oklch(0.96 0.1 286);
-  --text-muted: oklch(0.76 0.1 286);
-  --highlight: oklch(0.5 0.13 286);
-  --border: oklch(0.4 0.13 286);
-  --border-muted: oklch(0.3 0.13 286);
-  --primary: oklch(0.76 0.13 286);
-  --secondary: oklch(0.76 0.13 106);
-  --danger: oklch(0.7 0.13 30);
-  --warning: oklch(0.7 0.13 100);
-  --success: oklch(0.7 0.13 160);
-  --info: oklch(0.7 0.13 260);
+@layer reset, design;
+
+@layer reset {
+    @import url(./normalize.css);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-dark: oklch(0.92 0.065 286);
-    --bg: oklch(0.96 0.065 286);
-    --bg-light: oklch(1 0.065 286);
-    --text: oklch(0.15 0.13 286);
-    --text-muted: oklch(0.4 0.13 286);
-    --highlight: oklch(1 0.13 286);
-    --border: oklch(0.6 0.13 286);
-    --border-muted: oklch(0.7 0.13 286);
-    --primary: oklch(0.4 0.13 286);
-    --secondary: oklch(0.4 0.13 106);
-    --danger: oklch(0.5 0.13 30);
-    --warning: oklch(0.5 0.13 100);
-    --success: oklch(0.5 0.13 160);
-    --info: oklch(0.5 0.13 260);
-  }
-
+@layer details {
+    :root {
+        
+    }
 }
