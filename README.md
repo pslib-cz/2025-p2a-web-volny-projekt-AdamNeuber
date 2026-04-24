@@ -10,7 +10,7 @@
 
 _Krátce popište svůj projekt – čemu se věnuje, co nabízí a jaký problém řeší?_
 
-`Webová stránka s cílem představit a prodat fiktivní software SynapC, který má usnadnit připojování externích knihoven/API k C/C++ projektům a předejít tak tzv. "dependency hell"`
+`Webová stránka s cílem představit a prodat fiktivní software SynapC, který má usnadnit připojování externích knihoven/API k C/C++ projektům a předejít tak tzv. "dependency hell" pomocí intuitivního GUI`
 
 ---
 
