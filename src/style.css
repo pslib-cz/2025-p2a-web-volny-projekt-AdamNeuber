@@ -1,11 +1,349 @@
-@layer reset, design;
+@import url(./normalize.css) layer(reset);
 
-@layer reset {
-    @import url(./normalize.css);
+@layer reset, design, components;
+
+@layer design {
+  :root {
+    font-family: "Inter", sans-serif;
+    color: var(--text-normal);
+    --bg-dark: #08000f;
+    --bg-dark-60: rgba(8, 0, 15, 0.6);
+    --bg-base: #12041a;
+    --bg-light: #1D0E25;
+    --text-normal: #fff;
+    --text-muted: #c79fe0;
+  }
+
+  .img--responsive {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  html {
+    background: linear-gradient(var(--bg-base), var(--bg-light));
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    /* Link your updated SVG file here */
+    background-image: url("assets/bg-lines.svg");
+    background-repeat: no-repeat;
+
+    /* 100% width of the screen, and 100% of the FULL scrollable height */
+    background-size: 100% 100%;
+  }
+  main {
+    margin: 0 1em;
+  }
+  p {
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 4rem 0;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .heading {
+    font-size: 1.25em;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .desc {
+    color: var(--text-muted);
+  }
+  .fake-h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  .pacman-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: -1em 0 1em 0;
+  }
+
+  .btn-area {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 2em 0;
+  }
 }
 
-@layer details {
-    :root {
-        
+@layer components {
+  .top-nav {
+    position: relative;
+  }
+  .logo__symbol {
+    height: 3.75em;
+  }
+  .logo__label {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+    justify-content: space-between;
+    background: var(--bg-dark);
+  }
+
+  .nav--desktop {
+    display: none;
+  }
+
+  .hamburger-nav {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    background: var(--bg-dark);
+    margin: 0;
+    transition:
+      transform 0.5s,
+      opacity 0.5s;
+    transform: translate(0, -300px);
+    opacity: 0;
+    padding: 0;
+  }
+
+  .hamburger-nav.active {
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  .hamburger-nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-normal);
+    text-align: end;
+    padding: 0.5em;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 48px;
+    height: 40px;
+  }
+  .hamburger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: var(--text-normal);
+    border-radius: 4px;
+    left: 0;
+    transform-origin: center;
+    transition:
+      top 0.3s,
+      bottom 0.3s,
+      transform 0.3s 0.3s,
+      opacity 0.3s 0.3s;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 0px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 16px;
+  }
+  .hamburger span:nth-child(3) {
+    bottom: 0px;
+  }
+  .hamburger.active span:nth-child(1) {
+    top: 16px;
+    transform: rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    bottom: 16px;
+    transform: rotate(-45deg);
+  }
+
+  .card--pacman {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1.5em 2em;
+    background: var(--bg-dark-60);
+    border-radius: 1em;
+  }
+  .card--pacman__img {
+    width: 4em;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: var(--bg-dark);
+    color: var(--text-normal);
+    text-decoration: none;
+    border-radius: 0.5em;
+  }
+  .btn--secondary {
+    color: var(--bg-dark);
+    background-color: var(--text-normal);
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background: var(--bg-dark);
+    margin-top: 3em;
+    padding: 2em 1em;
+    color: var(--text-muted);
+  }
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+  .footer__nav span {
+    background: var(--text-muted);
+    display: block;
+    width: 1px;
+    height: 1em;
+  }
+  footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+    display: block;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+  }
+  @media (min-width: 768px) {
+    .hamburger-zone {
+      display: none;
     }
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .logo__label {
+      margin: -.5em;
+      display: inline-block;
+      color: var(--text-normal);
+    }
+    .nav--desktop {
+      display: flex;
+      font-size: 1.25em;
+      gap: 1em;
+    }
+    .nav--desktop a {
+      color: var(--text-normal);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 1em 8em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    footer::before {
+      display: block;
+      content: "";
+      background-color: var(--text-muted);
+      order: 1;
+      width: 2px;
+    }
+    footer::after {
+      display: block;
+      content: "";
+      background-color: var(--text-muted);
+      order: 3;
+      width: 2px;
+    }
+    .footer__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: .5em;
+      padding: .5em;
+      order: 0;
+    }
+    .footer__nav span {
+    display: none;
+    }
+    .contact {
+      padding: .5em;
+      order: 4;
+      text-align: end;
+    }
+    .info{
+      align-self: center;
+      text-align: center;
+      order: 2;
+    }
+  }
+}
+
+@layer layout {
+  @media (min-width: 960px) {
+  .pacman {
+    grid-area: pacman;
+  }
+  .pacman-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card--pacman {
+    max-width: 15em;
+  }
+  .callout{grid-area: callout}
+  .text{
+    grid-area: text;
+  }
+  .text p {
+    text-align: start;
+  }
+  .btn-area {
+    justify-content: end;
+    align-items: end;
+    gap: 2em;
+    grid-area: btns;
+  }
+  .fake-h3 {
+    text-align: center;
+  }
+  main{
+    display: grid;
+    gap: 4em;
+    grid-template-areas: 
+    "pacman callout"
+    "pacman text"
+    "pacman btns";
+  }
+  }
+  
 }
