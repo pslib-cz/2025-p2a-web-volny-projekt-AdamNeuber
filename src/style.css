@@ -69,7 +69,6 @@
   .text-center {
     text-align: center;
   }
-
   .pacman-cards {
     display: flex;
     flex-direction: column;
@@ -268,6 +267,32 @@
     flex-direction: column;
     gap: 0.5em;
   }
+
+  .form {
+    margin: 4em .5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .form input,textarea {
+    padding: .5em;
+    border-radius: 1em;
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted);
+    background: var(--bg-light);
+  }
+  .form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  .form input::placeholder,textarea::placeholder {
+    color: var(--text-muted);
+    opacity: .5;
+  }
+  .form .btn {
+    align-self: flex-end;
+  }
+
   @media (min-width: 960px) {
     p {
       margin: 0;
@@ -388,7 +413,7 @@
       grid-area: btns;
     }
     .fake-h3 {
-      text-align: center;
+      font-size: 3em;
     }
     .homepage__main {
       display: grid;
