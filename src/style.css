@@ -9,7 +9,7 @@
     --bg-dark: #08000f;
     --bg-dark-60: rgba(8, 0, 15, 0.6);
     --bg-base: #12041a;
-    --bg-light: #1D0E25;
+    --bg-light: #1d0e25;
     --text-normal: #fff;
     --text-muted: #c79fe0;
   }
@@ -32,11 +32,9 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
 
-    /* Link your updated SVG file here */
     background-image: url("assets/bg-lines.svg");
     background-repeat: no-repeat;
 
-    /* 100% width of the screen, and 100% of the FULL scrollable height */
     background-size: 100% 100%;
   }
   main {
@@ -48,7 +46,7 @@
   h1 {
     text-align: center;
     font-size: 3em;
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
   h2 {
     text-align: center;
@@ -84,6 +82,35 @@
     justify-content: space-between;
     margin: 1em 0 2em 0;
   }
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .showcase {
+    width: calc(100vw - 2em);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .swiper {
+
+    border-radius: 1em;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--text-muted) !important;
+  }
+  .pacman__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .feature__info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
 }
 
 @layer components {
@@ -96,7 +123,10 @@
   .logo__label {
     display: none;
   }
-
+  .dash {
+    width: 3em;
+    color: var(--text-muted);
+  }
   .navbar {
     display: flex;
     align-items: center;
@@ -236,9 +266,28 @@
   footer div {
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    gap: 0.5em;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 960px) {
+    p {
+      margin: 0;
+      font-size: 1.25em;
+    }
+    .btn {
+      font-size: 1.25em;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin: 4rem 0;
+    }
+    h2 {
+      text-align: center;
+      font-size: 3em;
+    }
+    .heading {
+      font-size: 2em;
+    }
     .hamburger-zone {
       display: none;
     }
@@ -248,7 +297,7 @@
       text-decoration: none;
     }
     .logo__label {
-      margin: -.5em;
+      margin: -0.5em;
       display: inline-block;
       color: var(--text-normal);
     }
@@ -287,19 +336,19 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: .5em;
-      padding: .5em;
+      gap: 0.5em;
+      padding: 0.5em;
       order: 0;
     }
     .footer__nav span {
-    display: none;
+      display: none;
     }
     .contact {
-      padding: .5em;
+      padding: 0.5em;
       order: 4;
       text-align: end;
     }
-    .info{
+    .info {
       align-self: center;
       text-align: center;
       order: 2;
@@ -309,41 +358,63 @@
 
 @layer layout {
   @media (min-width: 960px) {
-  .pacman {
-    grid-area: pacman;
+    h1 {
+      font-size: 4em;
+    }
+    .pacman {
+      grid-area: pacman;
+    }
+    .pacman-cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card--pacman {
+      max-width: 18em;
+    }
+    .callout {
+      grid-area: callout;
+    }
+    .text {
+      grid-area: text;
+    }
+    .text p {
+      text-align: start;
+    }
+    .btn-area {
+      justify-content: end;
+      align-items: end;
+      gap: 2em;
+      grid-area: btns;
+    }
+    .fake-h3 {
+      text-align: center;
+    }
+    .homepage__main {
+      display: grid;
+      gap: 4em;
+      grid-template-columns: 1.5fr 1fr;
+      grid-template-areas:
+        "pacman callout"
+        "pacman text"
+        "pacman btns";
+    }
+
+    .feature__info {
+      grid-area: feature;
+    }
+    .showcase {
+      grid-area: showcase;
+      width: calc(50vw - 4em);
+    }
+
+    .features__main {
+      display: grid;
+      margin: 0 4em;
+      gap: 8em;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "feature showcase";
+    }
   }
-  .pacman-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card--pacman {
-    max-width: 15em;
-  }
-  .callout{grid-area: callout}
-  .text{
-    grid-area: text;
-  }
-  .text p {
-    text-align: start;
-  }
-  .btn-area {
-    justify-content: end;
-    align-items: end;
-    gap: 2em;
-    grid-area: btns;
-  }
-  .fake-h3 {
-    text-align: center;
-  }
-  main{
-    display: grid;
-    gap: 4em;
-    grid-template-areas: 
-    "pacman callout"
-    "pacman text"
-    "pacman btns";
-  }
-  }
-  
 }
