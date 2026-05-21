@@ -282,8 +282,7 @@
     background: var(--bg-light);
   }
   .form textarea {
-    min-height: 100px;
-    resize: vertical;
+    resize: none;
   }
   .form input::placeholder,textarea::placeholder {
     color: var(--text-muted);
@@ -440,6 +439,26 @@
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 
       "feature showcase";
+    }
+
+    .contact__main div:nth-child(1) {
+      grid-area: text;
+      display: flex;
+      flex-direction: column;
+      gap: 8em;
+    }
+    .form {
+      grid-area: form;
+      margin: 0;
+    }
+
+    .contact__main {
+      display: grid;
+      margin: 0 4em 4em 4em;
+      gap: 8em;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "text form";
     }
   }
 }
