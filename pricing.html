@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/Logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/Logo.svg" />
     <link rel="stylesheet" href="./src/style.css">
     <script type="module" src="./src/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
     <header>
         <nav class="top-nav">
             <div class="navbar">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img class="logo__symbol" src="./src/assets/logo.svg" alt="SynapC logo"><span
                         class="logo__label heading bold">SynapC</span>
                 </a>
@@ -47,8 +47,37 @@
         </nav>
         <h1>Pricing</h1>
     </header>
-    <main>
-
+    <main class="pricing__main">
+        <div>
+            <p class="fake-h2 bold">Power for every developer.</p>
+            <p>Choose the plan that fits your project’s nervous system.</p>
+        </div>
+        <section>
+            <h2>Tiers</h2>
+            <div class="card-wrapper card--tier-wrapper">
+                <div class="card card--tier">
+                <p class="card--tier__heading">Community</p>
+                <p class="heading bold">Free</p>
+                <p>Single project management</p>
+                <p>Basic CMake injection</p>
+                <a href="#" class="btn btn--secondary">Download</a>
+            </div>
+            <div class="card card--tier">
+                <p class="card--tier__heading">Profesional</p>
+                <p class="heading bold">15$ / month</p>
+                <p>Unlimited projects</p>
+                <p>Advanced Graph Analytics</p>
+                <a href="#" class="btn btn--secondary">Free Trial</a>
+            </div>
+            <div class="card card--tier">
+                <p class="card--tier__heading">Enterprise</p>
+                <p class="heading bold">Adaptive pricing</p>
+                <p>Team-wide sync</p>
+                <p>Custom manager support</p>
+                <a href="#" class="btn btn--secondary">Get a Quote</a>
+            </div>
+            </div>      
+        </section>
     </main>
     <footer>
         <nav class="footer__nav">
