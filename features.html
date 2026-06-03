@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/style.css">
     <script type="module" src="./src/main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
     <title>SynapC — Features</title>
 </head>
 
@@ -24,7 +19,7 @@
                     <img class="logo__symbol" src="./src/assets/logo.svg" alt="SynapC logo"><span
                         class="logo__label heading bold">SynapC</span>
                 </a>
-                <a class="hamburger hamburger-zone">
+                <a class="hamburger hamburger-zone" href="javascript:void(0)">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -36,7 +31,7 @@
                     <a href="contact.html">Contact</a>
                 </nav>
             </div>
-            <ul class="hamburger-nav hamburger-zone">
+            <menu class="hamburger-nav hamburger-zone">
                 <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="index.html">Home</a></li>
                 <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="features.html">Features</a>
                 </li>
@@ -44,7 +39,7 @@
                 </li>
                 <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="contact.html">Contact</a>
                 </li>
-            </ul>
+            </menu>
         </nav>
         <h1>Features</h1>
     </header>
@@ -81,13 +76,34 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="img--responsive" src="https://placehold.co/600x600" alt="">
+                        <figure class="showcase__slide">
+                            <picture>
+                                <source class="img--responsive" srcset="./src/assets/dependency_graph.avif" type="image/avif">
+                                <source class="img--responsive" srcset="./src/assets/dependency_graph.webp" type="image/webp">
+                                <img class="img--responsive" src="./src/assets/dependency_graph.jpg" alt="Dependency Graph">
+                            </picture>
+                            <figcaption class="heading bold showcase__desc">Dependency Graph</figcaption>
+                        </figure>
                     </div>
                     <div class="swiper-slide">
-                        <img class="img--responsive" src="https://placehold.co/600x600" alt="">
+                        <figure class="showcase__slide">
+                            <picture>
+                                <source class="img--responsive" srcset="./src/assets/messycmake.avif" type="image/avif">
+                                <source class="img--responsive" srcset="./src/assets/messycmake.webp" type="image/webp">
+                                <img class="img--responsive" src="./src/assets/messycmake.jpg" alt="Messy CMakeLists.txt">
+                            </picture>
+                            <figcaption class="heading bold showcase__desc">Messy CMakeLists.txt written manually</figcaption>
+                        </figure>
                     </div>
                     <div class="swiper-slide">
-                        <img class="img--responsive" src="https://placehold.co/600x600" alt="">
+                        <figure class="showcase__slide">
+                            <picture>
+                                <source class="img--responsive" srcset="./src/assets/clean-cmake.avif" type="image/avif">
+                                <source class="img--responsive" srcset="./src/assets/clean-cmake.webp" type="image/webp">
+                                <img class="img--responsive" src="./src/assets/clean-cmake.jpg" alt="Clean CMakeLists.txt">
+                            </picture>
+                            <figcaption class="heading bold showcase__desc">Clean CMakeLists.txt made with SynapC</figcaption>
+                        </figure>
                     </div>
                 </div>
 

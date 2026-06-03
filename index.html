@@ -7,42 +7,37 @@
   <link rel="stylesheet" href="./src/style.css">
   <script type="module" src="./src/main.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
   <title>SynapC</title>
 </head>
 
 <body>
   <header>
-  <nav class="top-nav">
-    <div class="navbar">
+    <nav class="top-nav">
+      <div class="navbar">
         <a class="logo" href="#">
           <img class="logo__symbol" src="./src/assets/logo.svg" alt="SynapC logo"><span
             class="logo__label heading bold">SynapC</span>
         </a>
-      <a class="hamburger hamburger-zone">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-      <nav class="nav--desktop">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-    <ul class="hamburger-nav hamburger-zone">
-      <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="index.html">Home</a></li>
-      <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="features.html">Features</a></li>
-      <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="pricing.html">Pricing</a></li>
-      <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  
+        <a class="hamburger hamburger-zone" href="javascript:void(0)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <nav class="nav--desktop">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <menu class="hamburger-nav hamburger-zone">
+        <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="index.html">Home</a></li>
+        <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="features.html">Features</a></li>
+        <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="pricing.html">Pricing</a></li>
+        <li class="hamburger-nav-item"><a class="hamburger-nav-link heading" href="contact.html">Contact</a></li>
+      </menu>
+    </nav>
+
     <h1>SynapC</h1>
   </header>
   <main class="homepage__main">
@@ -55,25 +50,25 @@
       <h2>Manage your projects with</h2>
       <div class="card-wrapper pacman-cards">
         <a class="pacman__link" href="https://cmake.org/">
-        <div class="card card--pacman">
+          <div class="card card--pacman">
             <img class="card--pacman__img" src="./src/assets/cmake.svg" alt="cmake logo">
-          <p class="heading">Cmake</p>
-          <p class="desc">Seamlessly generate build scripts without the syntax headaches</p>
-        </div>
-      </a>
-      <a href="https://conan.io/" class="pacman__link">
-        <div class="card card--pacman">
-          <img class="card--pacman__img" src="./src/assets/conan.svg" alt="Conan logo">
-          <p class="heading">Conan</p>
-          <p class="desc">Access thousands of C++ packages with automated version control</p>
-        </div>
+            <p class="heading">Cmake</p>
+            <p class="desc">Seamlessly generate build scripts without the syntax headaches</p>
+          </div>
+        </a>
+        <a href="https://conan.io/" class="pacman__link">
+          <div class="card card--pacman">
+            <img class="card--pacman__img" src="./src/assets/conan.svg" alt="Conan logo">
+            <p class="heading">Conan</p>
+            <p class="desc">Access thousands of C++ packages with automated version control</p>
+          </div>
         </a>
         <a href="https://vcpkg.io/en/" class="pacman__link">
-        <div class="card card--pacman">
-          <img class="card--pacman__img" src="./src/assets/vcpkg.svg" alt="vcpkg logo">
-          <p class="heading">vcpkg</p>
-          <p class="desc">Effortlessly manage your C++ libraries with Microsoft's robust manager</p>
-        </div>
+          <div class="card card--pacman">
+            <img class="card--pacman__img" src="./src/assets/vcpkg.svg" alt="vcpkg logo">
+            <p class="heading">vcpkg</p>
+            <p class="desc">Effortlessly manage your C++ libraries with Microsoft's robust manager</p>
+          </div>
         </a>
       </div>
     </section>

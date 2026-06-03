@@ -1,6 +1,7 @@
 @import url(./normalize.css) layer(reset);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@layer reset, design, components;
+@layer reset, design, components, layout;
 
 @layer design {
   :root {
@@ -51,6 +52,9 @@
   h2 {
     text-align: center;
     font-size: 2em;
+  }
+  figure {
+    margin: 0;
   }
   .heading {
     font-size: 1.25em;
@@ -271,6 +275,7 @@
     color: var(--text-normal);
     text-decoration: none;
     border-radius: 0.5em;
+    transition: all .3s;
   }
   .btn:hover {
     background: #4D116D;
@@ -317,7 +322,18 @@
     flex-direction: column;
     gap: 0.5em;
   }
-
+  .showcase__slide {
+    position: relative;
+  }
+  .showcase__desc {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    color: var(--text-muted);
+    padding: 1rem 0;
+    background-color: var(--bg-dark-60);
+  }
   .form {
     margin: 4em .5em;
     display: flex;
@@ -373,7 +389,7 @@
       text-decoration: none;
     }
     .logo__label {
-      margin: -0.5em;
+      margin: -0.5rem;
       display: inline-block;
       color: var(--text-normal);
     }
