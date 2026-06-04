@@ -56,6 +56,9 @@
   figure {
     margin: 0;
   }
+  button {
+    border: none;
+  }
   .heading {
     font-size: 1.25em;
   }
