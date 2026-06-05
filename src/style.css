@@ -24,6 +24,7 @@
 
   html {
     background: linear-gradient(var(--bg-base), var(--bg-light));
+    scrollbar-color: var(--bg-light) var(--bg-dark);
   }
 
   body {
@@ -195,11 +196,7 @@
     border-radius: 4px;
     left: 0;
     transform-origin: center;
-    transition:
-      top 0.3s,
-      bottom 0.3s,
-      transform 0.3s 0.3s,
-      opacity 0.3s 0.3s;
+    transition: all 0.3s;
   }
 
   .hamburger span:nth-child(1) {
