@@ -23,8 +23,7 @@
   }
 
   html {
-    background: linear-gradient(var(--bg-base), var(--bg-light));
-    scrollbar-color: var(--bg-light) var(--bg-dark);
+    background: linear-gradient(var(--bg-base), var(--bg-light));    
   }
 
   body {
