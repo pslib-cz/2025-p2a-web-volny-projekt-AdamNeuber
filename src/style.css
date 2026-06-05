@@ -40,7 +40,9 @@
     background-size: 100% 100%;
   }
   main {
-    margin: 0 1em;
+    padding: 0 1em;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   p {
     margin: 0;
@@ -515,7 +517,7 @@
 
     .features__main {
       display: grid;
-      margin: 0 4em;
+      padding: 0 4em;
       gap: 8em;
       grid-template-columns: 1fr 1fr;
 
@@ -531,7 +533,7 @@
     .pricing__main {
       display: grid;
       grid-template-columns: 1fr 2fr;
-      margin: 0 4em;
+      padding: 0 4em;
       gap: 4em;
     }
 
@@ -548,7 +550,7 @@
 
     .contact__main {
       display: grid;
-      margin: 0 4em 4em 4em;
+      padding: 0 4em 4em 4em;
       gap: 8em;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 
