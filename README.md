@@ -45,7 +45,7 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 | Grafický manuál (Figma / Canva) | [`Manuál`](https://www.figma.com/design/3BBnhAbi8NIapvVlJnqd4O/NeuberAdam?node-id=3-144) |
 | Moodboard (Figma) | [`Moodboard`](https://www.figma.com/design/3BBnhAbi8NIapvVlJnqd4O/NeuberAdam?node-id=0-1)
 | Grafický návrh webu (Figma) | [`Design`](https://www.figma.com/design/3BBnhAbi8NIapvVlJnqd4O/NeuberAdam?node-id=3-299) |
-| Fotografie / média | [`Doplň odkaz`](#) |
+| Fotografie / média | [`absolutní odkaz`](https://pslib.sharepoint.com/sites/P2024A.MME-sk1/Sdilene%20dokumenty/Forms/AllItems.aspx?id=%2Fsites%2FP2024A%2EMME%2Dsk1%2FSdilene%20dokumenty%2F2025%20MME%20P2A%20%28HAL%29%2F06%20Projekt%20Brand%2Fodevzdan%C3%A9%20projekty%2FAdam%20Neuber&viewid=2f8a9bd0%2Db3e3%2D42a0%2Dbff9%2D5b1007a6d47c&p=true&ga=1) |
 
 ---
 
